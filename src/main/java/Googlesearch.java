@@ -16,7 +16,7 @@ public class Googlesearch {
 	@Given("^User search the googlepage$")
 	public void user_search_the_googlepage()  {
 		
-		System.setProperty("webdriver.gecko.driver", "C:\\Users\\vadivelkb\\eclipse-workspace\\project class\\Projects\\lib\\geckodriver.exe");
+		System.setProperty("webdriver.gecko.driver", "C:\\Users\\vadivelkb\\eclipse-workspace\\project class\\project\\cucumber\\lib\\geckodriver.exe");
 		driver =new FirefoxDriver();
 		driver.get("https://www.google.co.in/?gfe_rd=cr&dcr=0&ei=S1a7WozqHYLmugT5vp7gCA");
 	}
@@ -25,7 +25,7 @@ public class Googlesearch {
 	public void user_the_enter_the(String arg1)  {
 		
 		fn1= driver.findElement(By.id("lst-ib"));
-		fn1.sendKeys(Examples);
+	//	fn1.sendKeys(Examples);
 	
 	click1 = driver.findElement(By.id("lst-ib"));
 	click1.click();
