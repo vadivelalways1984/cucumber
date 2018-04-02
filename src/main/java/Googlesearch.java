@@ -25,7 +25,7 @@ public class Googlesearch {
 	public void user_the_enter_the(String arg1)  {
 		
 		fn1= driver.findElement(By.id("lst-ib"));
-	//	fn1.sendKeys(Examples);
+		fn1.sendKeys(Examples);
 	
 	click1 = driver.findElement(By.id("lst-ib"));
 	click1.click();
